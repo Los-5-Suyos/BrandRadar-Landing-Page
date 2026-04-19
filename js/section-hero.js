@@ -2,14 +2,14 @@
 (function () {
     'use strict';
 
-  /* ── 1. Nav shadow al hacer scroll ── */
+  /* ── Nav shadow al hacer scroll ── */
     const header = document.querySelector('.header');
 
     window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 24);
     }, { passive: true });
 
-  /* ── 2. Menú mobile ── */
+  /* ── Menú mobile ── */
     const burger = document.querySelector('.nav__burger');
 
   // Crear el overlay del menú mobile dinámicamente
