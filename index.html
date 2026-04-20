@@ -1,88 +1,235 @@
-!DOCTYPE html> 
+<!DOCTYPE html> 
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <title>BrandRadar – Monitoreo de Reputación en Tiempo Real</title>
+  <title>BrandRadar – Monitoreo de Reputacion en Tiempo Real</title>
 
-  <!-- Tipografías -->
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet" />
 
-  <!-- CSS GLOBAL -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/section-hero.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/section-dashboard.css" />
+  <link rel="stylesheet" href="css/section-testimonials.css" />
 </head>
 
 <body>
 
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav__logo">
+        <img src="assets/images/branradar.png" alt="BrandRadar logo" class="nav__logo-img" />
+      </a>
 
-  <!--  INTEGRANTE 1: HEADER + HERO -->
+      <ul class="nav__links">
+        <li><a href="#features">Caracteristicas</a></li>
+        <li><a href="#benefits">Beneficios</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#pricing">Precios</a></li>
+      </ul>
+
+      <a href="#" class="btn btn--primary btn--sm">Empezar ahora →</a>
+
+      <button class="nav__burger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
 
   <section id="hero">
+    <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+    <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
 
-    
+    <div class="hero__inner">
+      <div class="hero__badge">✨ Monitoreo en tiempo real</div>
+      <h1 class="hero__heading">
+        Conoce lo que dicen de tu
+        <span class="hero__heading-gradient">marca antes que nadie</span>
+      </h1>
+      <p class="hero__subtext">
+        BrandRadar detecta, analiza y clasifica cada mencion de tu empresa en internet al instante.<br class="hero__br" />
+        Toma decisiones con datos, no con suposiciones.
+      </p>
+      <div class="hero__actions">
+        <a href="#dashboard" class="btn btn--primary">Probar gratis →</a>
+        <a href="#" class="btn btn--ghost">Como funciona</a>
+      </div>
+    </div>
   </section>
 
+  <section id="dashboard" class="dashboard-section">
+    <div class="dashboard__container_new">
+      
+      <div class="dashboard__text-col">
+        <h2 class="dashboard__main-title">
+          Un dashboard diseñado para la <br> <span class="text-gradient">velocidad de decision</span>
+        </h2>
+        <p class="dashboard__description">
+          Toda la informacion que importa en una sola pantalla, sin ruido ni complejidad innecesaria. Diseñado con y para equipos de marketing y comunicaciones.
+        </p>
+        
+        <ul class="dashboard__feature-list">
+          <li><span class="icon-check"></span> Resumen ejecutivo en tiempo real</li>
+          <li><span class="icon-check"></span> Desglose de menciones por canal y region</li>
+          <li><span class="icon-check"></span> Evolucion historica del sentimiento</li>
+          <li><span class="icon-check"></span> Feed de alertas priorizado por urgencia</li>
+          <li><span class="icon-check"></span> Reportes PDF/Excel exportables al instante</li>
+        </ul>
+      </div>
 
-  <!--  INTEGRANTE 2: CARACTERÍSTICAS -->
+      <div class="dashboard__view-col">
+        <div class="app-ui-frame">
+          
+          <aside class="app-sidebar-frame">
+            <div class="logo-simulated"></div>
+            <nav class="sidebar-nav">
+              <div class="nav-icon active"></div> 
+              <div class="nav-icon"></div>
+              <div class="nav-icon"></div>
+            </nav>
+          </aside>
+          
+          <main class="app-content-frame">
+            
+            <header class="app-top-header">
+              <div class="search-simulated"></div>
+              <div class="user-simulated"></div>
+            </header>
 
-  <section id="features">
+            <div class="metrics-row-dark">
+              <div class="metric-card-dark">
+                <span class="m-label-dark">Cuota de Voz</span>
+                <span class="m-value-dark">38%</span>
+                <div class="m-trend-dark green">+2.1% este mes</div>
+              </div>
+              <div class="metric-card-dark">
+                <span class="m-label-dark">NPS Digital</span>
+                <span class="m-value-dark">72</span>
+                <div class="m-trend-dark green">+5 puntos</div>
+              </div>
+            </div>
 
-    
+            <div class="chart-area-dark">
+              <div class="chart-header-dark">
+                  <span>Sentimiento en el tiempo (ultimos 30 dias)</span>
+                  <span class="chart-value-dark">+18 acciones</span>
+              </div>
+              <div class="line-chart-simulated">
+                <svg viewBox="0 0 500 100" class="line-chart-svg">
+                  <path d="M0,80 C50,75 100,78 150,70 S250,50 300,55 S400,35 450,40 S500,10 500,10" stroke="#A855F7" stroke-width="3" fill="none" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="menciones-area-dark">
+              <div class="m-card-header-dark">Ultimas Menciones</div>
+              <ul class="menciones-list">
+                  <li class="mencion-item">
+                      <div class="mencion-user">
+                          <div class="user-avatar-dark purple">MS</div>
+                          <div>
+                              <span class="user-handle">@mariag_pe - Twitter</span>
+                              <p class="mencion-text-p">La atencion al cliente de esta marca es top. Rapida y eficiente.</p>
+                          </div>
+                      </div>
+                      <span class="sentiment-tag-dark green">Positivo</span>
+                  </li>
+                  <li class="mencion-item">
+                      <div class="mencion-user">
+                          <div class="user-avatar-dark blue">JR</div>
+                          <div>
+                              <span class="user-handle">Juan Ramos - Google</span>
+                              <p class="mencion-text-p">El producto llego tarde, muy mala experiencia de entrega.</p>
+                          </div>
+                      </div>
+                      <span class="sentiment-tag-dark red">Negativo</span>
+                  </li>
+              </ul>
+            </div>
+
+          </main>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <section id="testimonials" class="testimonials-section">
+    <div class="dashboard__container">
+      
+      <div class="testimonials__header">
+        <span class="section-tag">Testimonios</span>
+        <h2 class="section-title">Lo que dicen quienes ya usan <br> <span class="text-gradient">BrandRadar</span></h2>
+      </div>
 
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">
+              BrandRadar nos permitio detectar una crisis en menos de 3 minutos y responder antes de que se viralizara. Antes nos enterabamos horas despues. Es indispensable.
+            </p>
+          </div>
+          <div class="testimonial__author-box">
+            <div class="author__avatar" style="background: #6D28D9;">CL</div>
+            <div class="author__info">
+              <strong>Carolina Lopez</strong>
+              <span>Directora de Comunicaciones - Grupo Exito</span>
+            </div>
+          </div>
+        </div>
 
-  <!--  INTEGRANTE 3: BENEFICIOS -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">
+              Probamos 4 herramientas distintas y ninguna se acercaba al nivel de precision en español latinoamericano que tiene BrandRadar. El analisis de sentimiento es espectacular.
+            </p>
+          </div>
+          <div class="testimonial__author-box">
+            <div class="author__avatar" style="background: #4F46E5;">AM</div>
+            <div class="author__info">
+              <strong>Andres Morales</strong>
+              <span>Head of Digital - Bancolombia</span>
+            </div>
+          </div>
+        </div>
 
-  <section id="benefits">
-
-    
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">
+              Ahorramos mas de 20 horas semanales en monitoreo manual. Los reportes automaticos son perfectos para presentar a la alta direccion. Retorno de inversion inmediato.
+            </p>
+          </div>
+          <div class="testimonial__author-box">
+            <div class="author__avatar" style="background: #7C3AED;">PT</div>
+            <div class="author__info">
+              <strong>Patricia Torres</strong>
+              <span>CMO - Agencia Omnimedia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-
-  <!--  INTEGRANTE 4: DASHBOARD -->
-
-  <section id="dashboard">
-
-    
+  <section id="pricing" style="padding: 100px 5%; text-align: center;">
+      <h2 class="section-title">Precios</h2>
   </section>
 
-
-  <!--  INTEGRANTE 4: TESTIMONIOS -->
-
-  <section id="testimonials">
-
-    
+  <section id="cta" style="padding: 100px 5%; text-align: center; background: #7C3AED; color: white;">
+      <h2>¿Listo para proteger tu marca?</h2>
+      <a href="#" class="btn btn--primary" style="margin-top: 20px; background: white; color: #7C3AED; box-shadow: none;">Empezar Gratis</a>
   </section>
 
-
-  <!--  INTEGRANTE 5: PRECIOS -->
-
-  <section id="pricing">
-
-    
-  </section>
-
-
-
-  <!--  INTEGRANTE 5: CTA FINAL -->
-
-  <section id="cta">
-
-    
-  </section>
-
-
-
-  <!--  INTEGRANTE 5: FOOTER -->
-
-  <footer>
-
-    
+  <footer style="padding: 50px 5%; text-align: center; border-top: 1px solid #eee;">
+    <p>&copy; 2026 BrandRadar. Todos los derechos reservados.</p>
   </footer>
 
+  <script src="js/section-hero.js"></script>
 </body>
 </html>
-```
