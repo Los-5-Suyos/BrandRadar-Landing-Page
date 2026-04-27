@@ -16,6 +16,7 @@
 
 .nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
     max-width: 1200px;
@@ -68,15 +69,19 @@
 .lang-toggle {
     display: flex;
     align-items: center;
+    margin-left: auto;
     gap: 4px;
     background: rgba(124,58,237,.08);
     border: 1.5px solid rgba(124,58,237,.2);
     border-radius: var(--pill);
+    margin-left: auto;
+    margin-right: 8px;
     padding: 5px 6px;
     cursor: pointer;
     flex-shrink: 0;
     transition: border-color .2s, background .2s;
 }
+
 .lang-toggle:hover { border-color: var(--br-purple); background: rgba(124,58,237,.13); }
 .lang-toggle__opt {
     font-size: 0.72rem;
@@ -103,7 +108,7 @@
     border: none;
     cursor: pointer;
     padding: 4px;
-    margin-left: auto;
+    margin-left: 4px;
 }
 .nav__burger span {
     display: block;
